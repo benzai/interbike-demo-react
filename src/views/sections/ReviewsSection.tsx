@@ -46,10 +46,10 @@ export default function ReviewsSection({ type, heading, text1, text2, button, cu
   )
 
   return (
-    <div className="relative flex flex-col items-center pt-0 pb-10 md:pb-12 lg:pb-16 bg-theme-surface-500">
-      <div className="absolute left-0 top-0 bg-theme-surface-100 w-full h-20"></div>
+    <div className="relative flex flex-col items-center px-5 md:px-0 pt-0 pb-10 md:pb-12 lg:pb-16 bg-theme-surface-500">
+      <div className="absolute left-0 top-0 bg-theme-surface-100 w-full h-12 md:h-16 lg:h-20"></div>
 
-      <div className="relative container mx-auto w-10/12 h-full">{mainBlock}</div>
+      <div className="relative container mx-auto md:w-10/12 h-full">{mainBlock}</div>
     </div>
   )
 }

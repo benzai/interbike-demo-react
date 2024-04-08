@@ -20,7 +20,7 @@ export default function FeatureSection({ type, heading, text1, text2, button, im
   )
 
   return (
-    <div className="container mx-auto w-full py-6 md:py-10 lg:py-16 bg-theme-surface-100">
+    <div className="container mx-auto w-full px-5 md:px-0 py-6 md:py-10 lg:py-16 bg-theme-surface-100">
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         <div className="w-auto lg:w-6/12">{imageBlock}</div>
 
