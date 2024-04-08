@@ -2,7 +2,7 @@
 
 ## Live demo
 
-https://interbike-demo-react-pz6cpcxct-benzais-projects.vercel.app
+https://interbike-demo-react.vercel.app
 
 ## Figma UI mockup [1]
 
