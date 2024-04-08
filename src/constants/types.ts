@@ -69,3 +69,24 @@ export type IProduct = {
   productUrl: string
   status: "preOrder" | "inStock" | "soldOut"
 }
+
+export type IHomeHeaderSection = {
+  heading: string
+  text: string
+  coverImageUrl: string
+}
+
+export type IFeatureSection = {
+  heading: string
+  text1: string
+  text2: string
+  imageUrl: string
+  isReversed: boolean
+  buttonTitle: string
+  buttonRoute: string
+}
+
+export type IHomePage = {
+  homeHeaderSection: IHomeHeaderSection
+  featureSections: IFeatureSection[]
+}

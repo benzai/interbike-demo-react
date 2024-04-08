@@ -1,3 +1,5 @@
+import { client } from "@/constants/sanity/sanityClient"
+
 import Layout from "@/views/layouts/Layout"
 import HeaderSection from "@/views/sections/HeaderSection"
 import FeatureSection from "@/views/sections/FeatureSection"
@@ -6,47 +8,44 @@ import ProductsSection from "@/views/sections/ProductsSection"
 import DealsSection from "@/views/sections/DealsSection"
 import GallerySection from "@/views/sections/GallerySection"
 
-export default function Home() {
+import type { IHomePage } from "@/constants/types"
+
+type Props = {
+  cmsData: IHomePage
+}
+
+/// HeaderSection and FeatureSection (2x) has been replaced by CMS data from Sanity CMS.
+/// See the query in getStaticProps().
+
+export default function Home({ cmsData }: Props) {
   return (
     <Layout>
       <HeaderSection
-        heading="Dé fietswinkel voor professionals en fietsfanaten"
-        text="InterBikes staat voor kwaliteit. Wij bieden een groot aanbied premium merken zoals Kalkhoff, Riese & Müller en Specialized. Kom langs voor het ruime aanbod van fietsen en accessoires, deskundig advies of één van onze andere diensten."
-        coverImageUrl="https://benzai.github.io/staging-images/iaspect/istockphoto-113215945-612x612-edited.png"
+        heading={cmsData.homeHeaderSection.heading}
+        text={cmsData.homeHeaderSection.text}
+        coverImageUrl={cmsData.homeHeaderSection.coverImageUrl}
         buttonTo="/"
         buttonLabel="Bekijk ons aanbod"
       />
 
       <div className="flex flex-col py-6 md:py-8 lg:py-10">
-        <FeatureSection
-          type="primary"
-          heading="360° 3D Bodyscanning"
-          text1="Retül Fit is meer dan gewoon maar een Bike Fit. Het is een manier om meer te weten te komen over je lichaam, de oorzaak van je pijntjes en kwaaltjes en hoe je met een goede pasvorm je fietsdoelen kunt behalen."
-          text2="Met behulp van de 3D motion capture-technologie meet het Retül-systeem nauwkeurig elke bewegingsgraad en millimeter van de afstand, zodat u de fitter data kunt krijgen ter ondersteuning van de keuzes die worden gemaakt tijdens de afstelling van uw fietsuitrusting en persoonlijke rijervaring."
-          button={{
-            type: "primary",
-            size: "sm",
-            title: "Lees meer",
-            route: "/bodyscanning",
-            showAccessoryIcon: true,
-          }}
-          imageUrl="https://benzai.github.io/staging-images/iaspect/iaspect-training.png"
-        />
-        <FeatureSection
-          type="primary"
-          heading="Werkplaats"
-          text1="Is uw fiets stuk? Geen probleem! Lekke banden, versleten versnellingen, ontluchten schijfremmen. Geen euvel dat we voor u niet kunnen verhelpen. Alles waar mechaniek bij komt kijken is ooit wel eens toe aan een onderhoudsbeurt of een herstelling. "
-          text2="Gaat het dan toch eens fout, dan kunt u steeds terecht bij ons. In het ruimte atelier worden fietsen opgebouwd en hersteld door ervaren vakmensen met een passie voor fietsen."
-          button={{
-            type: "primary",
-            size: "sm",
-            title: "Maak een afspraak",
-            route: "/appointments/create",
-            showAccessoryIcon: true,
-          }}
-          imageUrl="https://benzai.github.io/staging-images/iaspect/iaspect-gears.png"
-          isReversed={true}
-        />
+        {cmsData.featureSections.map(section => (
+          <FeatureSection
+            type="primary"
+            heading={section.heading}
+            text1={section.text1}
+            text2={section.text2}
+            button={{
+              type: "primary",
+              size: "sm",
+              title: section.buttonTitle,
+              route: section.buttonRoute,
+              showAccessoryIcon: true,
+            }}
+            imageUrl={section.imageUrl}
+            isReversed={section.isReversed}
+          />
+        ))}
       </div>
 
       <ReviewsSection
@@ -183,4 +182,32 @@ export default function Home() {
       />
     </Layout>
   )
+}
+
+export async function getStaticProps() {
+  const cmsDataArray: IHomePage[] = await client.fetch(`// groq
+   *[_type == "homePage" && _id == "homePage"] {
+      _id,
+      homeHeaderSection {
+        heading,
+        text,
+        "coverImageUrl": coverImageUrl.asset->url
+      },
+      featureSections[] {
+        heading,
+        text1,
+        text2,
+        "imageUrl": imageUrl.asset->url,
+        isReversed,
+        buttonTitle,
+        buttonRoute
+      }
+    }
+  `)
+
+  return {
+    props: {
+      cmsData: cmsDataArray[0],
+    },
+  }
 }
