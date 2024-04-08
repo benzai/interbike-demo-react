@@ -10,7 +10,13 @@ https://www.figma.com/file/n3ylUbsgkBqL7juDSyUoFO/InterBikes-(Shared)?type=desig
 
 Wachtwoord: iaspect
 
-See /previews for PNG versions.
+Zie /previews voor PNG previews.
+
+## Update: Sanity CMS integratie toegevoegd
+
+Alleen voor bepaalde onderdelen ter demonstratie (Header en Features). Zie de query bij pages/index.tsx en /studio.
+
+Zie /previews voor PNG previews van Sanity CMS.
 
 # Uren
 
