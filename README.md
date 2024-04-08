@@ -1,40 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# i-Aspect front-end proefopdracht - Benny Chew
 
-## Getting Started
+## Live demo
 
-First, run the development server:
+https://interbike-demo-react-pz6cpcxct-benzais-projects.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Figma UI mockup [1]
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+https://www.figma.com/file/n3ylUbsgkBqL7juDSyUoFO/InterBikes-(Shared)?type=design&node-id=0%3A1&mode=design&t=QCr4nmaZmcU6YTz3-1
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Wachtwoord: iaspect
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+# Uren
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- HTML/CSS/Tailwind home page (desktop): Iets meer dan 1 dag
+- Responsive home page: Halve dag
+- Figma UI mockup: 1 dag [2]
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Werkwijze
 
-## Learn More
+- Next JS
+- Tailwind CSS
 
-To learn more about Next.js, take a look at the following resources:
+Voordat ik met bouwen begon, heb ik eerst een Figma mockup gemaakt. Ik koos ervoor om het project te bouwen met behulp van Next JS en Tailwind CSS, omdat ik hiermee sneller kan werken. Uiteraard zijn de HTML/CSS templates relatief eenvoudig om te zetten naar bijvoorbeeld Laravel. Ik ben van plan om op korte termijn Laravel te leren. Hopelijk biedt i-Aspect ook trainingsmogelijkheden aan op dit gebied (WordPress/Elementor/enz). Ik heb in het verleden veel met PHP/MySQL gewerkt.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Design system
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Een van de stappen in mijn Figma werkwijze is het opzetten van een design system. Dit heb ik ook gedaan bij de Interbikes mockup. Met name het kleurschema is opgezet m.b.v. design tokens. Dit design system heb ik vervolgens tijdens het bouwen eerst opgezet in o.a. globals.css en Tailwind config. Dit bespaart veel tijd en zorgt voor consistentie (font sizes, kleuren, enz vanuit een theme).
 
-## Deploy on Vercel
+### 'Design in code'
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+De meeste onderdelen heb ik 'nagebouwd' op basis van het Figma bestand. De mockup heb ik zelf gemaakt maar ironisch gezien raadpleeg ik het Figma bestand veelvuldig tijdens het bouwen (net zoals andere developers dat zouden doen). Een voorbeeld van een onderdeel dat ik 'on the fly' heb gebouwd omdat ik hiervoor geen Figma assets had gemaakt is de Producten sectie.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Verbeterpunten front-end
+
+- ARIA tags toevoegen
+
+## Disclaimers
+
+[1] Deze Figma mockup beschouw ik **niet** als een redesign of restyling. Een redesign of restyling vergt uiteraard meer tijd (requirements, user research, branding, concept designs, uitgebreidere design system, enz). Mijn doel is om op een beknopte manier te demonstreren hoe ik in Figma werk en hoe ik een website design opzet. Bovendien had ik niet de beschikking over het Sketch of Figma bestand en andere assets van het initiële design. Simpel gezegd heb ik het initiële design 'nagemaakt' met hier en daar mijn verbeterpunten voor de UI. Wat betreft UX heb ik vanwege tijdgebrek hier geen aandacht aan besteed.
+
+[2] Dit zie ik als een extra opdracht (optioneel).
+
+## Andere front-end voorbeelden
+
+Dit is niet de eerste keer dat ik een website bouw (front-end). Ik heb ook ervaring met het integreren van een CMS, met name Sanity CMS. Ik heb ook gewerkt met Dato CMS en Contentful bijvoorbeeld. Hieronder zijn een aantal development projecten van mij:
+
+AddOnn website (UI/UX, front-end, CMS, multi language)
+https://add-onn.com
+
+Hihaho (UI/UX, Swift, CoreData)
+https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://apps.apple.com/nl/app/hihaho-player/id1031834953&ved=2ahUKEwiaoNTG1bKFAxXG6AIHHbkuCrkQFnoECA4QAQ&usg=AOvVaw3a9bYRBwfZzXNriWtXAF_1
+
+Hihaho Android (port m.b.v. React Native)
+https://play.google.com/store/apps/details?id=com.hihaho.hihahoplayerandroid&hl=en_US
