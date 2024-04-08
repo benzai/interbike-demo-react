@@ -23,17 +23,29 @@ Wachtwoord: iaspect
 
 Voordat ik met bouwen begon, heb ik eerst een Figma mockup gemaakt. Ik koos ervoor om het project te bouwen met behulp van Next JS en Tailwind CSS, omdat ik hiermee sneller kan werken. Uiteraard zijn de HTML/CSS templates relatief eenvoudig om te zetten naar bijvoorbeeld Laravel. Ik ben van plan om op korte termijn Laravel te leren. Hopelijk biedt i-Aspect ook trainingsmogelijkheden aan op dit gebied (WordPress/Elementor/enz). Ik heb in het verleden veel met PHP/MySQL gewerkt.
 
-### Design system
+#### Design system
 
 Een van de stappen in mijn Figma werkwijze is het opzetten van een design system. Dit heb ik ook gedaan bij de Interbikes mockup. Met name het kleurschema is opgezet m.b.v. design tokens. Dit design system heb ik vervolgens tijdens het bouwen eerst opgezet in o.a. globals.css en Tailwind config. Dit bespaart veel tijd en zorgt voor consistentie (font sizes, kleuren, enz vanuit een theme).
 
-### 'Design in code'
+#### 'Design in code'
 
 De meeste onderdelen heb ik 'nagebouwd' op basis van het Figma bestand. De mockup heb ik zelf gemaakt maar ironisch gezien raadpleeg ik het Figma bestand veelvuldig tijdens het bouwen (net zoals andere developers dat zouden doen). Een voorbeeld van een onderdeel dat ik 'on the fly' heb gebouwd omdat ik hiervoor geen Figma assets had gemaakt is de Producten sectie.
 
 # Verbeterpunten front-end
 
+Verbeterpunten:
+
 - ARIA tags toevoegen
+- HTML tags verbeteren
+- Responsive image implementeren
+
+Uitbreidingen:
+
+- Mobile menu
+- Sticky NavBar met animatie
+- CMS
+
+De genoemde punten zijn slechts suggesties en zijn niet van toepassing op de proefopdracht.
 
 ## Disclaimers
 
