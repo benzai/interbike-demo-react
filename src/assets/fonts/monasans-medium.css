@@ -1,0 +1,7 @@
+
+@font-face {
+    font-family:"Mona Sans Medium";
+    src:url("MonaSans-Medium.woff2") format("woff2"),url("MonaSans-Medium.woff") format("woff"),url("MonaSans-Medium.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+        

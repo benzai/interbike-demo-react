@@ -1,0 +1,253 @@
+/** 
+ * ----------------------------------------
+ * Reset
+ * ----------------------------------------
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+  * ----------------------------------------
+  * Fonts
+  * ----------------------------------------
+  */
+@font-face {
+  font-family: "Mona Sans Medium";
+  src: url("../assets/fonts/monasans-medium.woff2") format("woff2"),
+    url("../assets/fonts/monasans-medium.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Mona Sans SemiBold";
+  src: url("../assets/fonts/monasans-semibold.woff2") format("woff2"),
+    url("../assets/fonts/monasans-semibold.woff") format("woff");
+  font-weight: normal;
+}
+
+/**
+  * ----------------------------------------
+  * Theme
+  * ----------------------------------------
+  */
+:root {
+  /* Screens */
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1400px;
+
+  /* Font */
+  --font-medium: "Mona Sans Medium";
+  --font-bold: "Mona Sans SemiBold";
+
+  /* Font sizes */
+  --fontSize-2xl: 40px;
+  --fontSize-xl: 32px;
+  --fontSize-lg: 24px;
+  --fontSize-md: 18px;
+  --fontSize-sm: 16px;
+  --fontSize-xs: 14px;
+  --fontSize-2xs: 12px;
+  --fontSize-3xs: 10px;
+
+  /* Colors */
+  --color-brand-primary-300: #FFF075;
+  --color-brand-primary-500: #E5D86A;
+  --color-brand-primary-700: #B2A640;
+  --color-brand-primary-700-60: rgba(178, 166, 64, 0.6);
+  --color-surface-100: #FFFFFF;
+  --color-surface-300: #F5F5F5;
+  --color-surface-500: #E5E5E5;
+  --color-surface-700: #272727;
+  --color-surface-900: #151515;
+  --color-text-primary: #151515;
+  --color-text-secondary: #736F5C;
+  --color-text-alternate-300: rgba(255, 255, 255, 0.6);
+  --color-text-alternate-500: #FFFFFF;
+  --color-icon-primary: #9CA5AD;
+  --color-status-positive: #41D98D;
+}
+
+/**
+  * ----------------------------------------
+  * Global CSS
+  * ----------------------------------------
+  */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+*,
+body,
+span,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+header,
+footer,
+nav {
+  font-family: var(--font-medium);
+  font-size: var(--fontSize-xs);
+  color: var(--color-text1);
+  line-height: 1.5em;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+  * ----------------------------------------
+  * Tailwind hooks
+  * ----------------------------------------
+  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
