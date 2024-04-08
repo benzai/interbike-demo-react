@@ -10,6 +10,8 @@ https://www.figma.com/file/n3ylUbsgkBqL7juDSyUoFO/InterBikes-(Shared)?type=desig
 
 Wachtwoord: iaspect
 
+See /previews for PNG versions.
+
 # Uren
 
 - HTML/CSS/Tailwind home page (desktop): Iets meer dan 1 dag
