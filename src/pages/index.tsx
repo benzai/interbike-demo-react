@@ -1,4 +1,4 @@
-import { client } from "../constants/sanity/sanityClient"
+import { client } from "@/constants/sanity/sanityClient"
 
 import Layout from "@/views/layouts/Layout"
 import HeaderSection from "@/views/sections/HeaderSection"
@@ -16,7 +16,6 @@ type Props = {
 
 /// HeaderSection and FeatureSection (2x) has been replaced by CMS data from Sanity CMS.
 /// See the query in getStaticProps().
-///
 
 export default function Home({ cmsData }: Props) {
   return (
