@@ -1,13 +1,4 @@
-// import { client } from "@/constants/sanity/sanityClient"
-
-import { createClient } from "@sanity/client"
-import { apiVersion, dataset, projectId, useCdn } from "../constants/sanity/sanityEnv"
-const client = createClient({
-  apiVersion,
-  dataset,
-  projectId,
-  useCdn,
-})
+import { client } from "@/constants/sanity/sanityClient"
 
 import Layout from "@/views/layouts/Layout"
 import HeaderSection from "@/views/sections/HeaderSection"
