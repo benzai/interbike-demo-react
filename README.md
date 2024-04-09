@@ -18,7 +18,7 @@ Alleen voor bepaalde onderdelen ter demonstratie (Header en Features). Zie de qu
 
 Zie /previews voor PNG previews van Sanity CMS.
 
-# Uren
+## Uren
 
 - HTML/CSS/Tailwind home page (desktop): Iets meer dan 1 dag
 - Responsive home page: Halve dag
@@ -39,7 +39,7 @@ Een van de stappen in mijn Figma werkwijze is het opzetten van een design system
 
 De meeste onderdelen heb ik 'nagebouwd' op basis van het Figma bestand. De mockup heb ik zelf gemaakt maar ironisch gezien raadpleeg ik het Figma bestand veelvuldig tijdens het bouwen (net zoals andere developers dat zouden doen). Een voorbeeld van een onderdeel dat ik 'on the fly' heb gebouwd omdat ik hiervoor geen Figma assets had gemaakt is de Producten sectie.
 
-# Verbeterpunten front-end
+## Verbeterpunten front-end
 
 Verbeterpunten:
 
