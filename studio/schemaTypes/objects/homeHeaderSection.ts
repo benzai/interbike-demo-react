@@ -14,5 +14,9 @@ export default {
       name: "coverImageUrl",
       type: "image",
     },
+    {
+      name: "callToActionButton",
+      type: "button",
+    },
   ],
 }

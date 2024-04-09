@@ -11,36 +11,35 @@ import GallerySection from "@/views/sections/GallerySection"
 import type { IHomePage } from "@/constants/types"
 
 type Props = {
-  cmsData: IHomePage
+  homePageData: IHomePage
 }
 
 /// HeaderSection and FeatureSection (2x) has been replaced by CMS data from Sanity CMS.
 /// See the query in getStaticProps().
 
-export default function Home({ cmsData }: Props) {
+export default function Home({ homePageData }: Props) {
   return (
     <Layout>
       <HeaderSection
-        heading={cmsData.homeHeaderSection.heading}
-        text={cmsData.homeHeaderSection.text}
-        coverImageUrl={cmsData.homeHeaderSection.coverImageUrl}
-        buttonTo="/"
-        buttonLabel="Bekijk ons aanbod"
+        heading={homePageData.homeHeaderSection.heading}
+        text={homePageData.homeHeaderSection.text}
+        button={homePageData.homeHeaderSection.callToActionButton}
+        coverImageUrl={homePageData.homeHeaderSection.coverImageUrl}
       />
 
       <div className="flex flex-col py-6 md:py-8 lg:py-10">
-        {cmsData.featureSections.map(section => (
+        {homePageData.featureSections.map(section => (
           <FeatureSection
             type="primary"
             heading={section.heading}
             text1={section.text1}
             text2={section.text2}
             button={{
-              type: "primary",
+              type: section.callToActionButton.type,
               size: "sm",
-              title: section.buttonTitle,
-              route: section.buttonRoute,
-              showAccessoryIcon: true,
+              title: section.callToActionButton.title,
+              route: section.callToActionButton.route,
+              showAccessoryIcon: section.callToActionButton.showAccessoryIcon,
             }}
             imageUrl={section.imageUrl}
             isReversed={section.isReversed}
@@ -185,13 +184,13 @@ export default function Home({ cmsData }: Props) {
 }
 
 export async function getStaticProps() {
-  const cmsDataArray: IHomePage[] = await client.fetch(`// groq
-   *[_type == "homePage" && _id == "homePage"] {
-      _id,
+  const homePageData: IHomePage = await client.fetch(`// groq
+    *[_type == "homePage" && _id == "homePage"][0] {
       homeHeaderSection {
         heading,
         text,
-        "coverImageUrl": coverImageUrl.asset->url
+        "coverImageUrl": coverImageUrl.asset->url,
+        callToActionButton
       },
       featureSections[] {
         heading,
@@ -199,15 +198,14 @@ export async function getStaticProps() {
         text2,
         "imageUrl": imageUrl.asset->url,
         isReversed,
-        buttonTitle,
-        buttonRoute
+        callToActionButton
       }
     }
   `)
 
   return {
     props: {
-      cmsData: cmsDataArray[0],
+      homePageData,
     },
   }
 }

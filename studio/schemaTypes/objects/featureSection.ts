@@ -23,12 +23,8 @@ export default {
       type: "boolean",
     },
     {
-      name: "buttonTitle",
-      type: "string",
-    },
-    {
-      name: "buttonRoute",
-      type: "string",
+      name: "callToActionButton",
+      type: "button",
     },
   ],
 }

@@ -3,6 +3,7 @@ export type IButton = {
   size?: "sm" | "md"
   title: string
   route: string
+  flexible?: boolean
   showAccessoryIcon?: boolean
   frameless?: boolean
 }
@@ -74,6 +75,7 @@ export type IHomeHeaderSection = {
   heading: string
   text: string
   coverImageUrl: string
+  callToActionButton: IButton
 }
 
 export type IFeatureSection = {
@@ -82,8 +84,7 @@ export type IFeatureSection = {
   text2: string
   imageUrl: string
   isReversed: boolean
-  buttonTitle: string
-  buttonRoute: string
+  callToActionButton: IButton
 }
 
 export type IHomePage = {

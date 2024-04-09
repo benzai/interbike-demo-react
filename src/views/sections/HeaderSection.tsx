@@ -1,14 +1,14 @@
 import Button from "@/views/core/Button"
+import type { IButton } from "@/constants/types"
 
 type Props = {
   heading: string
   text: string
-  buttonLabel: string
-  buttonTo: string
+  button: IButton
   coverImageUrl: string
 }
 
-export default function HeaderSection({ heading, text, buttonTo, buttonLabel, coverImageUrl }: Props) {
+export default function HeaderSection({ heading, text, button, coverImageUrl }: Props) {
   const background = (
     <div className="absolute left-0 top-0 z-0 w-full h-full">
       <div className="flex h-full">
@@ -34,7 +34,13 @@ export default function HeaderSection({ heading, text, buttonTo, buttonLabel, co
       </div>
 
       <div className="flex gap-2">
-        <Button type="secondary" to={buttonTo} title={buttonLabel} size="lg" showAccessoryIcon={true} />
+        <Button
+          type="secondary"
+          to={button.route}
+          title={button.title}
+          size="lg"
+          showAccessoryIcon={button.showAccessoryIcon}
+        />
       </div>
     </div>
   )

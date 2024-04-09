@@ -18,7 +18,7 @@ export default function Button({
   to,
   title,
   flexible = false,
-  showAccessoryIcon = false,
+  showAccessoryIcon = true,
   frameless = false,
 }: Props) {
   const fontSizes = {
