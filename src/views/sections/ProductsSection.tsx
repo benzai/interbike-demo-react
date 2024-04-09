@@ -29,7 +29,7 @@ export default function ProductsSection({ heading, products = [], button }: Prop
       <div className="relative flex items-center gap-2 w-full">
         <ul className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4 w-full">
           {products.map(product => (
-            <ProductPreviewCard key={product.id} item={product} />
+            <ProductPreviewCard key={product._id} item={product} />
           ))}
         </ul>
       </div>

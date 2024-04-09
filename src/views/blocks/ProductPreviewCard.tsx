@@ -42,7 +42,7 @@ export default function ProductPreviewCard({ item }: Props) {
           <Button
             type="secondary"
             size="md"
-            to={item.productUrl}
+            to={item.slug}
             title="Bekijk product"
             showAccessoryIcon={true}
             flexible={true}

@@ -60,14 +60,13 @@ export type IFooterTable = {
 }
 
 export type IProduct = {
-  id: number
+  _id: string
   brand: string
   name: string
-  category?: string
+  slug: string
   imageUrl: string
   price: number
   salePct?: number
-  productUrl: string
   status: "preOrder" | "inStock" | "soldOut"
 }
 

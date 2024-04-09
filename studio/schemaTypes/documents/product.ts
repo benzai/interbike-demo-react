@@ -3,20 +3,43 @@ export default {
   type: "document",
   fields: [
     {
-      name: "title",
+      name: "brand",
+      type: "string",
+    },
+    {
+      name: "name",
       type: "string",
     },
     {
       name: "slug",
       type: "slug",
       options: {
-        source: "title",
+        source: "name",
         maxLength: 96,
       },
     },
     {
-      name: "coverImage",
+      name: "imageUrl",
       type: "image",
+    },
+    {
+      name: "price",
+      type: "number",
+    },
+    {
+      name: "salePct",
+      type: "number",
+    },
+    {
+      name: "status",
+      type: "string",
+      options: {
+        list: [
+          { title: "Pre order", value: "preOrder" },
+          { title: "In stock", value: "inStock" },
+          { title: "Sold out", value: "soldOut" },
+        ],
+      },
     },
   ],
 }
