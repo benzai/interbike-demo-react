@@ -16,6 +16,7 @@ type Props = {
 
 /// HeaderSection and FeatureSection (2x) has been replaced by CMS data from Sanity CMS.
 /// See the query in getStaticProps().
+///
 
 export default function Home({ cmsData }: Props) {
   return (
