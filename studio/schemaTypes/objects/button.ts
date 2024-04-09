@@ -13,6 +13,17 @@ export default {
       },
     },
     {
+      name: "size",
+      type: "string",
+      options: {
+        list: [
+          { title: "Small", value: "sm" },
+          { title: "Medium", value: "md" },
+          { title: "Large", value: "lg" },
+        ],
+      },
+    },
+    {
       name: "title",
       type: "string",
     },
