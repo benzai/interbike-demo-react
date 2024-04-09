@@ -18,6 +18,8 @@ Alleen voor bepaalde onderdelen ter demonstratie (Header en Features). Zie de qu
 
 Zie /previews voor PNG previews van Sanity CMS.
 
+Update 9 april: Nu zie je dat de images bij Header en Features (de eerste 3 images) vanuit Sanity cdn komen (https://cdn.sanity.io/images/9w6rnb9o/production/b87ebdf7b9f9381a3eb1f1519e9f20794e43a61d-962x574.png) en niet meer vanuit benzai.github.io (https://benzai.github.io/staging-images/iaspect/iaspect-training.png).
+
 ## Uren
 
 - HTML/CSS/Tailwind home page (desktop): Iets meer dan 1 dag
