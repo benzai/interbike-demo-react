@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:sanity": "cd studio && npm run build"
+    "dev:sanity": "cd studio && npm run dev"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.5.2",

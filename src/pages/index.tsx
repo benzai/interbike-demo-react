@@ -8,16 +8,17 @@ import ProductsSection from "@/views/sections/ProductsSection"
 import DealsSection from "@/views/sections/DealsSection"
 import GallerySection from "@/views/sections/GallerySection"
 
-import type { IHomePage } from "@/constants/types"
+import type { IHomePage, IProduct } from "@/constants/types"
 
 type Props = {
   homePageData: IHomePage
+  products: IProduct[]
 }
 
-/// HeaderSection and FeatureSection (2x) has been replaced by CMS data from Sanity CMS.
+/// HeaderSection, FeatureSection and products has been replaced by CMS data from Sanity CMS.
 /// See the query in getStaticProps().
 
-export default function Home({ homePageData }: Props) {
+export default function Home({ homePageData, products }: Props) {
   return (
     <Layout>
       <HeaderSection
@@ -69,70 +70,7 @@ export default function Home({ homePageData }: Props) {
 
       <ProductsSection
         heading="Top 12 best verkochte fietsen"
-        products={[
-          {
-            id: 1,
-            brand: "Gazelle",
-            name: "Gazelle Esprit C 2021",
-            category: "bike",
-            imageUrl: "https://benzai.github.io/staging-images/iaspect/gazelle.jpeg",
-            price: 549,
-            productUrl: "/",
-            status: "inStock",
-          },
-          {
-            id: 2,
-            brand: "Lekker",
-            name: "Jordaan Urban Ebike",
-            category: "ebike",
-            imageUrl: "https://benzai.github.io/staging-images/iaspect/lekker.jpeg",
-            price: 2495,
-            productUrl: "/",
-            status: "inStock",
-          },
-          {
-            id: 3,
-            brand: "Helliot",
-            name: "Bicicleta Fixie Tribeca 18",
-            category: "",
-            imageUrl: "https://benzai.github.io/staging-images/iaspect/helliot.jpeg",
-            price: 229,
-            salePct: 8,
-            productUrl: "/",
-            status: "soldOut",
-          },
-          {
-            id: 4,
-            brand: "Cortina",
-            name: "Cortina U1 RN 2023 Heren",
-            category: "",
-            imageUrl: "https://benzai.github.io/staging-images/iaspect/cortina.jpeg",
-            price: 459,
-            productUrl: "/",
-            status: "soldOut",
-          },
-          {
-            id: 5,
-            brand: "Helliot",
-            name: "Bicicleta Fixie Tribeca 24",
-            category: "",
-            imageUrl: "https://benzai.github.io/staging-images/iaspect/helliot.jpeg",
-            price: 349,
-            salePct: 8,
-            productUrl: "/",
-            status: "inStock",
-          },
-          {
-            id: 6,
-            brand: "Lekker",
-            name: "Jordaan Urban Ebike Max",
-            category: "ebike",
-            imageUrl: "https://benzai.github.io/staging-images/iaspect/lekker.jpeg",
-            price: 1999,
-            productUrl: "/",
-            status: "inStock",
-          },
-        ]}
+        products={products}
         button={{
           type: "secondary",
           size: "sm",
@@ -203,9 +141,23 @@ export async function getStaticProps() {
     }
   `)
 
+  const products: IProduct[] = await client.fetch(`// groq
+    *[_type == "product"][0..5] {
+      _id,
+      brand,
+      name,
+      "slug": slug.current,
+      "imageUrl": imageUrl.asset->url,
+      price,
+      salesPct,
+      status
+    }
+  `)
+
   return {
     props: {
       homePageData,
+      products,
     },
   }
 }
