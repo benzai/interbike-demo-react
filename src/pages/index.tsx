@@ -109,6 +109,14 @@ export default function Home({ homePageData, products }: Props) {
             caption: "360° 3D Bodyscanning",
             imageUrl: "https://benzai.github.io/staging-images/iaspect/iaspect-training.png",
           },
+          {
+            caption: "Actie",
+            imageUrl: "https://benzai.github.io/staging-images/iaspect/iaspect-deal.png",
+          },
+          {
+            caption: "Home",
+            imageUrl: "https://benzai.github.io/staging-images/iaspect/istockphoto-113215945-612x612-edited.png",
+          },
         ]}
         button={{
           type: "primary",
