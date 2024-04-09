@@ -1,4 +1,4 @@
-import { client } from "../constants/sanity/sanityClient"
+import { client } from "@/constants/sanity/sanityClient"
 
 import Layout from "@/views/layouts/Layout"
 import HeaderSection from "@/views/sections/HeaderSection"
