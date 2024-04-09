@@ -14,13 +14,13 @@ type Props = {
 
 export default function FeatureSection({ type, heading, text1, text2, button, imageUrl, isReversed = false }: Props) {
   const imageBlock = (
-    <div className="w-full h-auto">
+    <figure className="w-full h-auto">
       <img className="aspect-16/10 object-cover" src={imageUrl} alt={heading} />
-    </div>
+    </figure>
   )
 
   return (
-    <div className="container mx-auto w-full px-5 md:px-0 py-6 md:py-10 lg:py-16 bg-theme-surface-100">
+    <section className="container mx-auto w-full px-5 md:px-0 py-6 md:py-10 lg:py-16 bg-theme-surface-100">
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         <div className="w-auto lg:w-6/12">{imageBlock}</div>
 
@@ -28,6 +28,6 @@ export default function FeatureSection({ type, heading, text1, text2, button, im
           <ContentTextBlock type={type} heading={heading} text1={text1} text2={text2} button={button} />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

@@ -12,7 +12,7 @@ type Props = {
 
 export default function ProductsSection({ heading, products = [], button }: Props) {
   return (
-    <div className="flex flex-col items-center gap-4 w-full px-5 md:px-12 lg:px-20 py-8 md:py-16 lg:py-24 bg-theme-surface-300">
+    <section className="flex flex-col items-center gap-4 w-full px-5 md:px-12 lg:px-20 py-8 md:py-16 lg:py-24 bg-theme-surface-300">
       <div className="flex justify-between items-center w-full">
         <h2 className="font-bold text-lg text-theme-text-primary">{heading}</h2>
 
@@ -33,6 +33,6 @@ export default function ProductsSection({ heading, products = [], button }: Prop
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   )
 }

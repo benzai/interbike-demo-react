@@ -14,9 +14,9 @@ export default function HeaderSection({ heading, text, button, coverImageUrl }: 
       <div className="flex h-full">
         <div className="hidden md:block w-4/12 h-full bg-theme-surface-700"></div>
 
-        <div className="w-full md:w-8/12 h-full bg-orange-200">
+        <figure className="w-full md:w-8/12 h-full bg-orange-200">
           <img className="w-full h-full object-cover" src={coverImageUrl} />
-        </div>
+        </figure>
       </div>
     </div>
   )

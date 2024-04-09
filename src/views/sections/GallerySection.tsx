@@ -10,7 +10,7 @@ type Props = {
 
 export default function GallerySection({ galleryImages, button }: Props) {
   return (
-    <div className="relative flex flex-col items-center gap-5 pt-0 pb-12 md:pb-16 lg:pb-20 px-5 md:px-12 lg:px-20 bg-theme-surface-500">
+    <section className="relative flex flex-col items-center gap-5 pt-0 pb-12 md:pb-16 lg:pb-20 px-5 md:px-12 lg:px-20 bg-theme-surface-500">
       <div className="absolute left-0 top-0 w-full h-12 md:h-16 lg:h-24 bg-theme-surface-300"></div>
 
       <div className="relative w-full h-auto">
@@ -35,6 +35,6 @@ export default function GallerySection({ galleryImages, button }: Props) {
           showAccessoryIcon={button.showAccessoryIcon}
         />
       </div>
-    </div>
+    </section>
   )
 }

@@ -75,7 +75,7 @@ export default function NavBar({}: Props) {
   )
 
   const menuBar = (
-    <div className="hidden md:flex justify-center px-2 md:px-4 lg:px-5 py-1">
+    <nav className="hidden md:flex justify-center px-2 md:px-4 lg:px-5 py-1">
       <ul className="flex gap-2 lg:gap-4">
         <MenuButton to="/store/products/bikes" title="Fietsen" showAccessoryIcon={true} />
         <MenuButton to="/information/financing" title="Financiering" showAccessoryIcon={true} />
@@ -86,14 +86,14 @@ export default function NavBar({}: Props) {
         <MenuButton to="/news" title="Nieuws" showAccessoryIcon={true} />
         <MenuButton to="/contact" title="Contact" />
       </ul>
-    </div>
+    </nav>
   )
 
   return (
-    <nav className="flex flex-col bg-theme-surface-900 border-solid border-b border-theme-brand-primary-700-60">
+    <header className="flex flex-col bg-theme-surface-900 border-solid border-b border-theme-brand-primary-700-60">
       {subBar}
       {mainBar}
       {menuBar}
-    </nav>
+    </header>
   )
 }

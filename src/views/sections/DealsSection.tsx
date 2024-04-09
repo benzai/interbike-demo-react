@@ -24,8 +24,8 @@ export default function DealsSection({ heading, text1, text2, button, imageUrl }
   )
 
   return (
-    <div className="flex flex-col items-center px-5 md:px-0 pt-10 pb-20 md:pb-24 lg:pb-32 bg-theme-surface-300">
+    <section className="flex flex-col items-center px-5 md:px-0 pt-10 pb-20 md:pb-24 lg:pb-32 bg-theme-surface-300">
       <div className="relative container mx-auto md:w-10/12 h-full">{mainBlock}</div>
-    </div>
+    </section>
   )
 }
