@@ -14,7 +14,7 @@ Zie /previews voor PNG previews.
 
 ## Update: Sanity CMS integratie toegevoegd
 
-Alleen voor bepaalde onderdelen ter demonstratie (Header en Features). Zie de query bij pages/index.tsx en /studio.
+Alleen voor bepaalde onderdelen ter demonstratie (Header, Features en producten). Zie de query bij /src/pages/index.tsx en /studio.
 
 Zie /previews voor PNG previews van Sanity CMS.
 
@@ -54,7 +54,7 @@ Verbeterpunten:
 Uitbreidingen:
 
 - Mobile menu
-- Sticky NavBar met animatie
+- Sticky NavBar met animatie [3]
 - CMS
 
 De genoemde punten zijn slechts suggesties en zijn niet van toepassing op de proefopdracht.
@@ -64,6 +64,9 @@ De genoemde punten zijn slechts suggesties en zijn niet van toepassing op de pro
 [1] Deze Figma mockup beschouw ik **niet** als een redesign of restyling. Een redesign of restyling vergt uiteraard meer tijd (requirements, user research, branding, concept designs, uitgebreidere design system, enz). Mijn doel is om op een beknopte manier te demonstreren hoe ik in Figma werk en hoe ik een website design opzet. Bovendien had ik niet de beschikking over het Sketch of Figma bestand en andere assets van het initiële design. Simpel gezegd heb ik het initiële design 'nagemaakt' met hier en daar mijn verbeterpunten voor de UI. Wat betreft UX heb ik vanwege tijdgebrek hier geen aandacht aan besteed.
 
 [2] Dit zie ik als een extra opdracht (optioneel).
+
+[3] Bij nader inzien misschien toch meer geen sticky NavBar (UX). Althans niet zonder daar goed over na te denken m.b.t. UX. Ik heb als test even bij de 3 populaire webshops (waar ik vaak shop) gekeken (Amazon, Zalando en Coolblue) en alleen Coolblue heeft een sticky NavBar.
+https://adamsilver.io/blog/the-problem-with-sticky-menus-and-what-to-do-instead/
 
 ## Andere front-end voorbeelden
 
@@ -77,3 +80,7 @@ https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://apps.a
 
 Hihaho Android (port m.b.v. React Native)
 https://play.google.com/store/apps/details?id=com.hihaho.hihahoplayerandroid&hl=en_US
+
+Zie /@benny-very-old-frontend-projects voor voorbeelden van enkele (hele oude) front-end projecten (beetje PHP, Sass en normale CSS). Voordat ik mijn websites in React/Gatsby ging bouwen (en later Tailwind) heb ik ook met tools gewerkt zoals Grunt, Gulp, PHP/MySQL en Saas (SCSS).
+
+Zie https://github.com/benzai/BennyChewDev voor meer informatie m.b.t. mijn development ervaring.

@@ -1,0 +1,210 @@
+/*
+Default
+*/
+
+/* ----- container (main content) ----- */
+
+#mainContent {	
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto 200px; /* space between content and footer */
+}
+
+/* ----- body ----- */
+
+body {
+	font-family: "Lucida Sans", Verdana, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #929292; /* on darker bg */
+	
+	background: url(../images/assets/bg_pattern.png) repeat;
+	background-color: #e4e4e4;
+	
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-smoothing: subpixel-antialiased;
+}
+
+a {
+	font-size: 16px;
+	color: #929292; /* on darker bg */
+	text-decoration: underline;
+}
+
+a:hover {
+	font-size: 16px;
+	color: #929292; /* on darker bg */
+	text-decoration: none;
+}
+
+/* ----- header ----- */
+
+#headerGRP {
+	width: 100%; height: 170px;
+}
+
+#headerWrapper {
+	position: relative;
+	width: 1020px; height: 170px;
+	margin: 0 auto;
+}
+
+/* ----- logo ----- */
+
+#logoGRP {
+	float: left;
+	width: 272px; height: 170px;
+	margin: 0px 0px 0px 0px;
+}
+
+#logo a {
+	display: block;
+	text-indent: -9999px;
+	width: 272px; height: 110px;
+	margin: 28px 0px 0px -12px;
+	background: url(../images/sprites/sprites_main.png) no-repeat -10px -10px;
+}
+
+/* ----- navigation ----- */
+
+#mainmenuGRP {
+	float: left;
+	width: 298px; height: 45px;
+	margin: 64px 0px 0px 67px;
+}
+
+#mainmenu {
+	width: 298px; height: 45px;
+	margin: 0px 0px 0px 0px;
+	
+	background: url(../images/assets/mainmenu_gradient.png) repeat-x;
+	background-color: #fff;
+	
+	border: 1px solid #b9b9b9;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#mainmenu li {
+	display: inline; /* IE fix */
+}
+
+#mainmenu li a {
+	float: left;
+	text-indent: -9999px;
+	height: 45px;
+	margin: 0px 0px 0px 0px;
+}	
+
+#mainmenu li#mainmenuHome a {
+	width: 70px; background: url(../images/sprites/sprites_main.png) no-repeat -648px -10px;
+}
+#mainmenu li#mainmenuAbout a {
+	width: 70px; background: url(../images/sprites/sprites_main.png) no-repeat -718px -10px;
+}
+#mainmenu li#mainmenuWork a {
+	width: 64px; background: url(../images/sprites/sprites_main.png) no-repeat -788px -10px;
+}
+#mainmenu li#mainmenuContact a {
+	width: 94px; background: url(../images/sprites/sprites_main.png) no-repeat -852px -10px;
+}
+
+#mainmenu li#mainmenuHome a:hover {
+	background: url(../images/sprites/sprites_main.png) no-repeat -648px -55px;
+}
+#mainmenu li#mainmenuAbout a:hover {
+	background: url(../images/sprites/sprites_main.png) no-repeat -718px -55px;
+}
+#mainmenu li#mainmenuWork a:hover {
+	background: url(../images/sprites/sprites_main.png) no-repeat -788px -55px;
+}
+#mainmenu li#mainmenuContact a:hover {
+	background: url(../images/sprites/sprites_main.png) no-repeat -852px -55px;
+}
+
+#mainmenu li#mainmenuHome a.selected {
+	width: 70px; background: url(../images/sprites/sprites_main.png) no-repeat -648px -55px;
+}
+#mainmenu li#mainmenuAbout a.selected {
+	width: 70px; background: url(../images/sprites/sprites_main.png) no-repeat -718px -55px;
+}
+#mainmenu li#mainmenuWork a.selected {
+	width: 64px; background: url(../images/sprites/sprites_main.png) no-repeat -788px -55px;
+}
+#mainmenu li#mainmenuContact a.selected {
+	width: 94px; background: url(../images/sprites/sprites_main.png) no-repeat -852px -55px;
+}
+
+/* ----- credo ----- */
+
+#credoGRP {
+	float: right;
+	width: 290px; height: 170px;
+	margin: 0px 0px 0px 0px;
+}
+
+#credo  {
+	text-indent: -9999px;
+	width: 290px; height: 57px;
+	margin: 58px 0px 0px 0px;
+	background: url(../images/sprites/sprites_main.png) no-repeat -349px -10px;
+}
+
+/* ----- footer ----- */
+
+#footerPush { /* hack to make the footer stick to the bottom */
+	clear: both;
+}
+
+#footerGRP { /* use a footer group to make the background stretch */
+	clear: both;
+	width: 100%; height: 154px;
+	background: url(../images/assets/footer_contrastbg.png) repeat-x;
+}
+
+#footerWrapper { /* use a footer content container and center it */
+	overflow: hidden;
+	position: relative;
+	width: 1020px; height: 154px;
+	margin: 0 auto;
+}
+
+/* ---------- */
+#footer_row1 {
+	width: 1020px; height: 38px;
+}
+
+#footer_buttonBackToTop a {
+	float: right;
+	text-indent: -9999px;
+	width: 106px; height: 15px;
+	margin: 6px 0px 0px 0px;
+	background: url(../images/sprites/sprites_main.png) no-repeat -801px -283px;	
+}
+#footer_buttonBackToTop a:hover {
+	background-position: -907px -283px;	
+}
+
+#footer_row2 {
+	width: 1020px; height: 116px;
+}
+
+#footer_copyright {
+	float: left;
+	width: 400px; height: 24px;
+	margin: 74px 0px 0px 0px;
+	font-size: 14px;
+	color: #6f6f6f;
+}
+
+#footer_BenzaiLogo a {
+	float: right;
+	display: block;
+	text-indent: -9999px;
+	width: 52px; height: 47px;
+	margin: 44px 0px 0px 0px;
+	background: url(../images/sprites/sprites_main.png) no-repeat -288px -8px;
+}

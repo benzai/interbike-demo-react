@@ -1,0 +1,94 @@
+section {
+	padding: 60px 0 80px 0;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+/* section title */
+
+.section-title h3 {
+	font-size: 40px;
+}
+
+.section-title p {
+	margin-top: 8px;
+	font-size: 20px;
+}
+
+/* type containers */
+
+.story,
+.screenshots {
+	margin-top: 68px;
+}
+
+.screenshots-double {
+	margin-top: 32px; /* same as figure */
+}
+
+/* side description */
+
+.description-side span {
+	text-align: left;
+	font-size: 20px;
+}
+
+.description-side p {
+	margin-top: 20px;
+	padding: 0;
+	text-align: left;
+	font-size: 16px;
+}
+
+/* centered description */
+
+.description span {
+	text-align: center;
+	font-size: 20px;
+}
+
+.description p {
+	margin-top: 4px;
+	text-align: center;
+	font-size: 16px;
+}
+
+/* figure */
+
+figure.landing {
+	margin-top: 48px;	
+}
+
+figure.screenshot {
+	margin: 32px 0 0 0;
+}
+
+figure.screenshot:first-child {
+	margin-top: 0;
+}
+
+/* landing */
+
+#landing {
+	margin-top: 80px;
+	padding-bottom: 60px;
+}
+
+#landing h1 {
+	margin: 0;
+	color: #00ace9;
+	@include font-family-heading;
+	font-size: 80px;
+	letter-spacing: -2px;
+}
+
+#landing span {
+	margin-top: 14px;
+	font-size: 18px;
+}
+
+#landing p {
+	margin-top: 40px;
+	padding: 0;
+	text-align: left;
+	font-size: 20px;
+}

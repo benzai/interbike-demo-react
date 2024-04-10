@@ -1,0 +1,197 @@
+/*
+Work detail
+*/
+
+/* ----- header sub ----- */
+
+#headerBottomGRP {
+	width: 100%; height: 257px;	
+	background: url(../images/assets/header_contrastbg_sub.png) repeat-x;
+}
+
+#headerBottomWrapper {
+	position: relative;
+	width: 1020px; height: 257px;
+	margin: 0 auto;
+}
+
+/* ---------- */
+#header_headingDeco {
+	float: left;
+	text-indent: -9999px;
+	width: 450px; height: 257px;
+	margin: 0px 0px 0px 285px;
+	background: url(../images/sprites/sprites_graphics.png) no-repeat -437px -10px;
+}
+
+/* ----- project ----- */
+
+#projectGRP {
+	width: 100%;
+}
+
+#projectWrapper {
+	position: relative;
+	width: 1020px;
+	margin: 0 auto;
+}
+
+/* ---------- */
+#projectBlockGRP {
+	position: relative;
+	width: 850px;
+	padding: 43px 0px 0px 85px;
+}
+
+/* ---------- info */
+#projectTitleMotherGRP {
+	float: left;
+	width: 851px;
+}
+
+#projectTitleGRP {
+	float: left;
+	width: 720px;
+}
+
+#projectTitleGRP h2 {
+	width: 720px; height: 48px;
+	margin: 0px 0px 0px -2px;
+	font-family: 'PFDinDisplayProThin', 'Helvetica Neue', Arial, Verdana, sans-serif;
+	font-size: 44px;
+	color: #636363;
+}
+
+#projectInfo_role {
+	width: 720px;
+	margin: -12px 0px 0px -1px;
+	font-family: 'PFDinDisplayProThinItalic', 'Helvetica Neue', Arial, Verdana, sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+#projectInfo_description {
+	float: left;
+	width: 720px;
+	margin: 22px 0px 31px 0px;
+	font-size: 14px;
+	line-height: 22px;
+	
+	/*
+	-moz-column-count: 2;
+	-moz-column-gap: 10px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 10px;
+	column-count: 2;
+	column-gap: 10px;
+	*/
+}
+#projectInfo_description a {
+	font-size: 14px;
+}
+
+#buttonAllProjects {
+	float: right;
+	width: 189px; height: 49px;
+	margin: 30px 0px 0px 0px;
+}
+#buttonAllProjects a {
+	display: block;
+	text-indent: -9999px;
+	width: 189px; height: 49px;
+	background: url(../images/sprites/sprites_main.png) no-repeat -415px -316px;
+}
+#buttonAllProjects a:hover {
+	background-position: -415px -365px;
+}
+
+#projectInfo_separator {
+	float: left;
+	width: 850px; height: 1px;
+	margin: 27px 0px 0px 0px;
+	background-color: #c3c3c3;
+}
+
+/* ---------- screenshots */
+#projectScreenshotsUL {
+	float: left;
+	width: 850px;
+}
+
+#projectScreenshotsUL li {
+	float: left;
+	width: 850px;
+	margin: 0px 0px 38px 0px;
+}
+
+#projectScreenshotsUL li img {
+	float: left;
+	width: 850px;
+	margin: 0px 0px 0px -1px;
+	border: 1px solid #c7c7c7;
+}
+
+#projectScreenshots_separator {
+	float: left;
+	width: 850px; height: 1px;
+	margin: 5px 0px 0px 0px;
+	background-color: #c3c3c3;
+}
+
+#buttonNextProject {
+	float: right;
+	width: 49px; height: 49px;
+	margin: 0px 0px 0px 0px;
+}
+#buttonNextProject a {
+	display: block;
+	text-indent: -9999px;
+	width: 49px; height: 49px;
+	background: url(../images/sprites/sprites_main.png) no-repeat -809px -116px;
+}
+#buttonNextProject a:hover {
+	background-position: -809px -165px;
+}
+
+#buttonPrevProject {
+	float: right;
+	width: 49px; height: 49px;
+	margin: 0px 4px 0px 0px;
+}
+#buttonPrevProject a {
+	display: block;
+	text-indent: -9999px;
+	width: 49px; height: 49px;
+	background: url(../images/sprites/sprites_main.png) no-repeat -868px -116px;
+}
+#buttonPrevProject a:hover {
+	background-position: -868px -165px;
+}
+
+/* ---------- credits */
+#projectCreditsGRP {
+	float: left;
+	width: 650px;
+}
+
+#projectCredits_label {
+	text-indent: -9999px;
+	width: 59px; height: 19px;
+	margin: 24px 0px 0px 0px;
+	background: url(../images/sprites/sprites_main.png) no-repeat -801px -226px;
+}
+
+#projectCreditsGRP ul {
+	width: 650px;
+	margin: 7px 0px 0px -1px;
+}
+
+#projectCreditsGRP ul li {
+	width: 650px;
+	margin: 0px 0px 3px 0px;
+	font-size: 14px;
+	line-height: 20px;
+}
+#projectCreditsGRP ul li:last-child {
+	margin-bottom: 0px;
+}

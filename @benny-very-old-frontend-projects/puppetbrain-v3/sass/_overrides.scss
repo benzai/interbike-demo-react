@@ -1,0 +1,299 @@
+/* Overrides */
+
+/* ----- Wide ----- */
+
+@media (min-width: 1200px) {
+	h2 {
+		font-size: 120px;
+	}
+
+	p {
+		font-size: 24px;
+	}
+
+	#about .story span {
+		margin-top: 28px;
+		font-size: 32px;
+	}
+
+	#about .story p {
+		margin-top: 48px;
+		font-size: 24px;
+		line-height: 2.4em;
+	}
+
+	#work figure.project figcaption h3 {
+		margin-top: 130px;
+	}
+}
+
+/* ----- Desktop ----- */
+
+@media (min-width: 980px) and (max-width: 1200px) {
+
+}
+ 
+/* ----- Tablet ----- */
+
+@media (min-width: 768px) and (max-width: 979px) {
+	/* Default */
+
+	h1 {	
+		margin-top: 32px;
+		font-size: 28px;
+		line-height: 36px;
+	}
+
+	#work figure.project figcaption h3 {
+		margin-top: 68px;
+		padding: 6px 16px;
+		font-size: 18px;
+		line-height: 20px;
+	}
+}
+
+/* ----- Mobile to Tablet ----- */
+
+@media (max-width: 767px) {
+	/* Default */
+
+	body {
+    	padding-right: 0;
+		padding-left: 0;
+	}
+
+	.navbar-fixed-top,
+	.navbar-fixed-bottom,
+ 	.navbar-static-top {
+    	margin-right: 0;
+    	margin-left: 0;
+	}
+
+	p {
+		padding: 0 40px;
+		font-size: 18px;
+	}
+
+	h1 {	
+		margin: 20px auto 0 auto;
+		font-size: 28px;
+		line-height: 34px;
+	}
+
+	h2 {
+		font-size: 60px;
+	}
+
+	/* Master */
+
+	#logo a {
+		margin: 0 auto;
+	}
+
+	/* Welcome */
+
+	#welcome {
+		margin: 0;
+		margin-bottom: -180px;
+	}
+
+	#welcome .masthead {
+		margin-top: 60px;
+		padding: 0 60px;
+	}
+
+	#welcome {
+		padding-right: 20px;
+		padding-left: 20px;
+		height: 500px;
+		background: url(../img/header-bg-ipad-1024.gif) repeat-x;
+	}
+
+	#welcome .masthead {
+		width: 300px;
+		height: 100%;
+		margin-top: 56px;
+	}
+
+	.welcome-bar {
+		height: 200px;
+	}
+
+	#services {
+		padding: 30px 0 20px 0;
+	}
+
+	#services .icon {
+		margin-bottom: 40px;
+	}
+	
+	/* Work */
+	
+	#work {
+		padding: 40px 0 60px 0;
+	}
+
+	#work p {
+		margin: 16px 0 20px 0;
+	}
+
+	#work .span4 {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#work figure.project {
+		margin: 0 auto;
+		text-align: center;
+		margin: 15px 20px;
+	}
+
+	/* About */
+
+	#about {
+		padding: 40px 0 40px 0;
+	}
+
+	#about .carousel .nav-content {
+		margin-top: 24px;
+	}
+
+	#about .story span {
+		font-size: 24px;
+	}
+
+	#about .story p {
+		margin-top: 36px;
+		padding: 0 28px;
+		font-size: 17px;
+	}
+	
+	/* Contact */
+
+	#contact {
+		padding-top: 40px;
+	}
+
+	#contact p {
+		margin-top: 16px;
+		padding: 0 20px;
+	}
+
+	#contact .row.info {
+		margin-top: 60px;
+	}
+
+	#contact ul {
+		margin-left: 32px;
+	}
+
+	#contact .truck {
+		float: none;
+		width: 60%;
+		height: 60%;
+		margin-top: 80px;
+	}
+
+	/* Footer */
+
+	#footer {
+		padding: 36px 28px;
+		padding-bottom: 32px;
+		height: 100%;
+	}
+
+	#footer .row.social {
+		margin-top: 0;
+	}
+
+	#footer nav ul {
+		margin-top: 16px;
+	}
+
+	#footer nav ul li a {
+		font-size: 16px;
+		width: 300px;
+		margin: 0 0 14px 0;
+	}
+
+	#footer .copyright {
+		float: left;
+		margin-top: 20px;
+		padding: 0;
+		text-align: left;
+		line-height: 24px;
+	}
+}
+
+/* ----- Mobile ----- */
+
+@media (max-width: 320px) {
+	/* Master */
+
+	h1 {	
+		margin-top: 8px;
+		text-align: left;
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	#work p,
+	#contact p {
+		line-height: 26px;
+	}
+
+	/* Welcome */
+
+	#welcome {
+		padding-right: 20px;
+		padding-left: 20px;
+		height: 500px;
+		background: url(../img/header-bg-ipad-1024.gif) repeat-x;
+	}
+
+	#welcome .masthead {
+		width: 300px;
+		height: 100%;
+		margin-top: 56px;
+	}
+
+	.welcome-bar {
+		height: 84px;
+	}
+
+	#services .icon span {
+		margin-top: 14px;
+	}
+
+	#services .icon {
+		margin-bottom: 36px;
+	}
+
+	/* Work */
+
+	#work figure.project {
+		margin: 20px 48px;
+	}
+
+	#work .button {
+		margin-top: 24px;
+	}
+}
+
+@media (max-height: 768px) {
+	h1 {
+		margin-top: 50px;
+		font-size: 36px;
+	}
+
+	#welcome {
+		height: 592px;
+		background: url(../img/header-bg-ipad-1024.gif) repeat-x;
+	}
+
+	#welcome .masthead {
+		width: 628px;
+		height: 100%;
+		margin-top: 56px;
+	}
+}
