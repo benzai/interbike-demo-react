@@ -12,7 +12,7 @@ export default function FooterItem({ item }: Props) {
       return (
         <Link className="flex" href={linkItem.route}>
           <div className="flex items-center gap-1 py-1">
-            <span className="text-2xs text-theme-text-alternate-300 hover:text-theme-brand-primary-700 hover:underline transition">
+            <span className="text-xs text-theme-text-alternate-300 hover:text-theme-brand-primary-700 hover:underline transition">
               {linkItem.title}
             </span>
           </div>
@@ -23,7 +23,7 @@ export default function FooterItem({ item }: Props) {
       const infoItem = item as IFooterItemInfo
       return (
         <div className="flex items-center gap-1 py-1">
-          <span className="text-2xs text-theme-text-alternate-300">{infoItem.value}</span>
+          <span className="text-xs text-theme-text-alternate-300">{infoItem.value}</span>
         </div>
       )
 
@@ -31,9 +31,9 @@ export default function FooterItem({ item }: Props) {
       const keyValueItem = item as IFooterKeyValue
       return (
         <div className="flex items-center gap-1 py-1">
-          <span className="text-2xs text-theme-text-alternate-500">{keyValueItem.key}</span>
+          <span className="text-xs text-theme-text-alternate-500">{keyValueItem.key}</span>
           <Link className="flex" href={keyValueItem.route}>
-            <span className="text-2xs text-theme-text-alternate-300 hover:text-theme-brand-primary-700 hover:underline transition">
+            <span className="text-xs text-theme-text-alternate-300 hover:text-theme-brand-primary-700 hover:underline transition">
               {keyValueItem.value}
             </span>
           </Link>
@@ -44,8 +44,8 @@ export default function FooterItem({ item }: Props) {
       const tableValue = item as IFooterTable
       return (
         <div className="flex items-center gap-1 py-1">
-          <span className="w-28 text-2xs text-theme-text-alternate-300">{tableValue.key}</span>
-          <span className="text-2xs text-theme-text-alternate-300">{tableValue.value}</span>
+          <span className="w-28 text-xs text-theme-text-alternate-300">{tableValue.key}</span>
+          <span className="text-xs text-theme-text-alternate-300">{tableValue.value}</span>
         </div>
       )
   }

@@ -77,15 +77,15 @@ export default function Footer({}: Props) {
     <div className="flex flex-col items-end">
       <div className="flex items-center gap-1.5">
         <FooterItem item={{ type: "link", title: "Algemene voorwaarden", route: "/terms" }} />
-        <span className="text-xs text-theme-brand-primary-700 opacity-50">|</span>
+        <span className="text-sm text-theme-brand-primary-700 opacity-50">|</span>
         <FooterItem item={{ type: "link", title: "Retouren", route: "/information/returns" }} />
-        <span className="text-xs text-theme-brand-primary-700 opacity-50">|</span>
+        <span className="text-sm text-theme-brand-primary-700 opacity-50">|</span>
         <FooterItem item={{ type: "link", title: "Privacy", route: "/privacy" }} />
       </div>
 
       <div className="flex items-center gap-1.5">
         <FooterItem item={{ type: "info", value: "Crossretail 4" }} />
-        <span className="text-xs text-theme-brand-primary-700 opacity-50">-</span>
+        <span className="text-sm text-theme-brand-primary-700 opacity-50">-</span>
         <FooterItem item={{ type: "info", value: "Alle rechten voorbehouden" }} />
       </div>
 

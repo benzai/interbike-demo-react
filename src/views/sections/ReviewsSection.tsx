@@ -18,7 +18,7 @@ export default function ReviewsSection({ type, heading, text1, text2, button, cu
       <MiniReviewWidget count={21} />
 
       <div className="flex flex-col gap-3 order-first lg:order-last">
-        <p className="text-md leading-relaxed text-theme-brand-primary-500">{customerReview.message}</p>
+        <p className="text-lg leading-relaxed text-theme-brand-primary-500">{customerReview.message}</p>
 
         <div className="flex items-center gap-2">
           {customerReview.imageUrl && (
@@ -27,7 +27,7 @@ export default function ReviewsSection({ type, heading, text1, text2, button, cu
               src={customerReview.imageUrl}
             />
           )}
-          <p className="text-xs text-theme-text-alternate-300">{customerReview.name}</p>
+          <p className="text-sm text-theme-text-alternate-300">{customerReview.name}</p>
         </div>
       </div>
     </div>

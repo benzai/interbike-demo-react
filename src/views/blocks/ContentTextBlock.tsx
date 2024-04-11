@@ -31,15 +31,15 @@ export default function ContentTextBlock({ type, heading, text1, text2, button }
       </div>
 
       <div className="flex flex-col gap-3">
-        <p className={cx("text-sm leading-relaxed", bodyTextColors[type])}>{text1}</p>
-        {text2 && <p className={cx("text-sm leading-relaxed", bodyTextColors[type])}>{text2}</p>}
+        <p className={cx("text-md leading-relaxed", bodyTextColors[type])}>{text1}</p>
+        {text2 && <p className={cx("text-md leading-relaxed", bodyTextColors[type])}>{text2}</p>}
       </div>
 
       <div className="flex gap-2">
         {button && (
           <Button
             type={type}
-            size={button.size}
+            size="md"
             to={button.route}
             title={button.title}
             showAccessoryIcon={button.showAccessoryIcon}

@@ -71,7 +71,7 @@ export default function GallerySection({ galleryImages, button }: Props) {
           type={button.type}
           to={button.route}
           title={button.title}
-          size="lg"
+          size="md"
           showAccessoryIcon={button.showAccessoryIcon}
         />
       </div>

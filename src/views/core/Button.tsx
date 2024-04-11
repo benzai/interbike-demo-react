@@ -40,38 +40,42 @@ export default function Button({
   }
 
   const frameColors = {
-    primary: cx(frameless ? "bg-transparent" : "bg-theme-surface-700 hover:opacity-80 transition"),
+    primary: cx(
+      frameless ? "bg-transparent" : "bg-theme-surface-700 group-hover:bg-theme-brand-primary-700 transition"
+    ),
     secondary: cx(
       frameless
         ? "bg-transparent"
-        : "bg-theme-surface-300 border-solid border border-theme-brand-primary-700 hover:opacity-80 transition"
+        : "bg-theme-surface-300 border border-solid border-theme-brand-primary-700 group-hover:bg-theme-brand-primary-700 group-hover:border group-hover:border-solid group-hover:border-theme-surface-500 transition"
     ),
   }
 
   const textColors = {
-    primary: "text-theme-brand-primary-500",
-    secondary: "text-theme-text-primary",
+    primary: "text-theme-brand-primary-500 group-hover:text-theme-text-alternate-500",
+    secondary: "text-theme-text-primary group-hover:text-theme-text-alternate-500",
   }
 
   const iconColors = {
-    primary: "text-theme-brand-primary-700",
-    secondary: "text-theme-brand-primary-700",
+    primary: "text-theme-brand-primary-700 group-hover:text-theme-text-alternate-300",
+    secondary: "text-theme-brand-primary-700 group-hover:text-theme-text-alternate-300",
   }
 
   return (
-    <Link
-      className={cx(
-        "block rounded-none",
-        flexible ? "w-full" : "w-auto",
-        frameSizePaddings[size],
-        frameHeights[size],
-        frameColors[type]
-      )}
-      href={to}>
-      <div className="flex justify-center items-center gap-1 h-full">
-        <span className={cx(fontSizes[size], textColors[type])}>{title}</span>
-        {showAccessoryIcon && <Icon iconName="arrowRight" styleOverride={iconColors[type]} />}
-      </div>
-    </Link>
+    <div className="group">
+      <Link
+        className={cx(
+          "block rounded-none",
+          flexible ? "w-full" : "w-auto",
+          frameSizePaddings[size],
+          frameHeights[size],
+          frameColors[type]
+        )}
+        href={to}>
+        <div className="flex justify-center items-center gap-1 h-full">
+          <span className={cx(fontSizes[size], textColors[type])}>{title}</span>
+          {showAccessoryIcon && <Icon iconName="arrowRight" styleOverride={iconColors[type]} />}
+        </div>
+      </Link>
+    </div>
   )
 }

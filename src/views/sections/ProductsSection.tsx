@@ -1,6 +1,5 @@
 import cx from "classnames"
 import Button from "@/views/core/Button"
-import IconButton from "@/views/core/IconButton"
 import ProductPreviewCard from "@/views/blocks/ProductPreviewCard"
 import type { IButton, IProduct } from "@/constants/types"
 
@@ -20,7 +19,7 @@ export default function ProductsSection({ heading, products = [], button }: Prop
           type={button.type}
           to={button.route}
           title={button.title}
-          size={button.size}
+          size="md"
           showAccessoryIcon={button.showAccessoryIcon}
           frameless={button.frameless}
         />

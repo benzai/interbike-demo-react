@@ -38,7 +38,7 @@ export default function HeaderSection({ heading, text, button, coverImageUrl }: 
           type="secondary"
           to={button.route}
           title={button.title}
-          size="lg"
+          size="md"
           showAccessoryIcon={button.showAccessoryIcon}
         />
       </div>
