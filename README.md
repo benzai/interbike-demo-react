@@ -12,6 +12,10 @@ Wachtwoord: iaspect
 
 Zie /previews voor PNG previews.
 
+## Update 12 april: Redesign UI/UX
+
+https://www.figma.com/file/MutA0msdpWOTs7cx9tSG2Z/InterBikes-Redesign-(Shared)?type=design&node-id=0%3A1&mode=design&t=bV5wdiO5B8lNyV7w-1
+
 ## Hoe kun je de front-end lokaal runnen
 
 1. Clone het project en open een Terminal venster.
